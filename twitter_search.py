@@ -14,17 +14,17 @@ oauth = OAuth(config.ACCESS_TOKEN, config.ACCESS_SECRET, config.CONSUMER_KEY, co
 twitter = Twitter(auth=oauth)
 
 # Search for latest tweets about "#nlproc"
-latest = twitter.search.tweets(q='#therealchensu')
+latest = twitter.search.tweets(q='#imwithher')
 
-#print json.dumps(latest, indent=4)
+print json.dumps(latest, indent=4)
 
 
 # Get a list of followers of a particular user
-followers = twitter.followers.ids(screen_name="chensusays")
+#followers = twitter.followers.ids(screen_name="chensusays")
 
 #print json.dumps(followers, indent=4)
 
 
 # Get a particular user's timeline (up to 3,200 of his/her most recent tweets)
-recent_tweets = twitter.statuses.user_timeline(screen_name="chensusays")
+#recent_tweets = twitter.statuses.user_timeline(screen_name="chensusays")
 #print json.dumps(recent_tweets, indent=4)
