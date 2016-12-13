@@ -1,3 +1,7 @@
 
-##keep tokens on local only
-twitter_streaming.py
+##remove api tokens
+config.py
+config.pyc
+
+#data files
+*.txt
